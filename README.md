@@ -18,34 +18,34 @@ Working Concept:
 
 Pulse Monitoring:
 
-<code>The pulse sensor will continuously monitor the driver's heart rate. If the heart rate exceeds or falls below a specific threshold (indicating stress or unconsciousness), this could signal a potential problem.</code>
+```The pulse sensor will continuously monitor the driver's heart rate. If the heart rate exceeds or falls below a specific threshold (indicating stress or unconsciousness), this could signal a potential problem.```
 
 
 Accident Detection Using MPU6050:
 
-<code>1. The MPU6050 will detect sudden jerks or changes in the vehicle's axis. Significant changes could be due to an accident or a tilt during mountain driving.
-2. A distinction is needed between normal mountain climbing and an accident, so it will be combined with the sound and vibration sensors to accurately detect accidents.</code>
+```1. The MPU6050 will detect sudden jerks or changes in the vehicle's axis. Significant changes could be due to an accident or a tilt during mountain driving.
+2. A distinction is needed between normal mountain climbing and an accident, so it will be combined with the sound and vibration sensors to accurately detect accidents.```
 
 
 Sound and Vibration Sensors:
 
-<code>1. Sound sensors will monitor abnormal noise levels, such as the sound of a crash or screeching tires.
+```1. Sound sensors will monitor abnormal noise levels, such as the sound of a crash or screeching tires.
 2. The vibration sensor will detect strong vibrations caused by collisions or falls.
-3. These sensors will work in tandem with the MPU6050 to prevent false positives when driving on uneven terrain, like mountains. Both sound and vibration must exceed specific thresholds to trigger the system.</code>
+3. These sensors will work in tandem with the MPU6050 to prevent false positives when driving on uneven terrain, like mountains. Both sound and vibration must exceed specific thresholds to trigger the system.```
 
 
 Accident Detection Logic:
 
-<code>1. The system will use if-else logic to determine if the changes in the MPU6050 readings, combined with sound and vibration sensor data, suggest an accident.
-2. If an accident is detected, the system will proceed to send the driver’s GPS location via SMS using the GSM and GPS modules.</code>
+```1. The system will use if-else logic to determine if the changes in the MPU6050 readings, combined with sound and vibration sensor data, suggest an accident.
+2. If an accident is detected, the system will proceed to send the driver’s GPS location via SMS using the GSM and GPS modules.```
 
 
 GSM and GPS for Alert:
 
-<code>1. In the event of an accident, the GPS module will obtain the vehicle's location.
-2. The GSM module will send an SMS containing the accident location to predefined phone numbers (family members, hospitals).</code>
+```1. In the event of an accident, the GPS module will obtain the vehicle's location.
+2. The GSM module will send an SMS containing the accident location to predefined phone numbers (family members, hospitals).```
 
 Note
 
-<code>1. Thresholds: You’ll need to adjust the thresholds for heart rate, acceleration, sound, and vibration based on real-world testing to minimize false positives.
-2. change the number given [1234567890].</code>
+```1. Thresholds: You’ll need to adjust the thresholds for heart rate, acceleration, sound, and vibration based on real-world testing to minimize false positives.
+2. change the number given [1234567890].```
