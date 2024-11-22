@@ -1,6 +1,6 @@
-My accident detection and prevention system using Arduino is a well-rounded and practical project. Here's a step-by-step approach to building it, integrating all the sensors and modules you mentioned:
+<h1>My accident detection and prevention system using Arduino is a well-rounded and practical project. Here's a step-by-step approach to building it, integrating all the sensors and modules you mentioned:
 
-Components Required:
+Components Required:</h1>
 
 1. Arduino (Uno/Nano/Mega)
 2. Pulse Sensor – to monitor the driver’s heart rate.
